@@ -9,4 +9,8 @@ public class CalculatorService {
     public BigDecimal add(BigDecimal a, BigDecimal b) {
         return a.add(b);   // BigDecimal is immutable: add() returns a NEW value
     }
+
+    public BigDecimal subtract(BigDecimal a, BigDecimal b) {
+        return a.subtract(b);
+    }
 }
