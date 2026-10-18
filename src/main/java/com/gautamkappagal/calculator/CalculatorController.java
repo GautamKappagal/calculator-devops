@@ -31,4 +31,9 @@ public class CalculatorController {
     public CalculationResponse multiply(@RequestParam("a") BigDecimal a, @RequestParam("b") BigDecimal b) {
         return new CalculationResponse("multiply", a, b, service.multiply(a, b));
     }
+
+    @GetMapping("/divide")
+    public CalculationResponse divide(@RequestParam("a") BigDecimal a, @RequestParam("b") BigDecimal b) {
+        return new CalculationResponse("divide", a, b, service.divide(a, b));
+    }
 }
