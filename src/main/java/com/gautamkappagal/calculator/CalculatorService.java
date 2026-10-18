@@ -1,0 +1,12 @@
+package com.gautamkappagal.calculator;
+
+import java.math.BigDecimal;
+import org.springframework.stereotype.Service;
+
+@Service   // tells Spring: create and manage one instance of this class
+public class CalculatorService {
+
+    public BigDecimal add(BigDecimal a, BigDecimal b) {
+        return a.add(b);   // BigDecimal is immutable: add() returns a NEW value
+    }
+}
