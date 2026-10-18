@@ -13,4 +13,8 @@ public class CalculatorService {
     public BigDecimal subtract(BigDecimal a, BigDecimal b) {
         return a.subtract(b);
     }
+
+    public BigDecimal multiply(BigDecimal a, BigDecimal b) {
+        return a.multiply(b);
+    }
 }
