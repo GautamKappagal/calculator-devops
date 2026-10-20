@@ -25,7 +25,7 @@ pipeline {
         stage('Test') {
             steps { sh 'mvn -B test' }
             post {
-                always { junit 'target/surefire-reports/*.xml '}    // Publish results even on failure
+                always { junit 'target/surefire-reports/*.xml'}    // Publish results even on failure
             }
         }
 
