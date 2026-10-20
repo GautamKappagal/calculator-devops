@@ -53,7 +53,7 @@ pipeline {
                     docker compose pull
                     docker compose up -d --remove-orphans --force-recreate --wait --wait-timeout 120
                     docker compose ps
-                    curl -fsS https://localhost:8088/actuator/health; echo
+                    curl -fsS http://localhost:8088/actuator/health; echo
                     curl -fsS "http://localhost:8088/api/v1/add?a=2&b=3"; echo
                 '''
             }
